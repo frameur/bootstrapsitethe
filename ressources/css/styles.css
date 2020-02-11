@@ -215,7 +215,7 @@ blockquote::before{
     font-size: 800%;
     font-family: "sanchez, serif";
     position: absolute;
-    top: 8px;
+    top: 30px;
     left: 5px;
     color: rgba(255,255,255,0.5);
 
@@ -234,7 +234,8 @@ cite img{
 /* packs */
 
 .pack{
-    box-shadow: 0, 0, 5px, rgba(0,0,0,0.3);
+    
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
     border-radius: 10px;
 }
 .pack h3{
@@ -244,6 +245,33 @@ cite img{
 .pack h4{
     font-size: 200%;
     font-weight: 100;
+}
+.pack span{
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+.pack-premium{
+    background-color: rgb(76, 216, 76);
+    color: #fff;
+}
+.pack-title-premium{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    padding: 5px;
+}
+.pack-signup:hover .btn-pack{
+    background-color: rgb(53, 161, 53);
+    color: #fff;
 }
 .pack-title{
     padding: 10px 10px 0 10px;
@@ -256,8 +284,8 @@ cite img{
     line-height: 35px;
 }
 .pack-content ul li i{
-    font-size: 90%;
-    margin-left: 10px;
+    /* font-size: 90%; */
+    margin-left: 20px;
 }
 .pack-signup{
     text-align: center;
