@@ -19,6 +19,27 @@
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <div class="container">
+                <a class="nav-bar" href="#">boutique du thé</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
+                    aria-controls="monMenu" aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collaspse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="#">qui nous sommes</a>
+                        <a class="nav-item nav-link" href="#">nos produits</a>
+                        <a class="nav-item nav-link" href="#">photos</a>
+                        <a class="nav-item nav-link" href="#">nos packs</a>
+                        <a class="nav-item nav-link" href="#">contact</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
 
         <div class="container">
             <div class="row">
@@ -332,35 +353,57 @@
                             </div>
                         </div>
                     </div>
+                    <!-- nom et adresse -->
                     <form action="">
                         <div class="row">
                             <div class="col-md-6">
-                                <label>nom:</label>
-                                <input type="text" id="name">
+                                <div class="contact-form">
+                                    <label>nom:</label>
+                                    <input type="text" id="name">
+                                </div>
                             </div>
-                            <label>email;</label>
-                            <input type="email" id="email" placeholder="mettre votre mail ici">
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                    <label>email;</label>
+                                    <input type="email" id="email" placeholder="mettre votre mail ici">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- service a contacter -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <label for="">Sélectionnez le service</label>
+                                    <select name="" id="">
+                                        <option value="">service client</option>
+                                        <option value="">service comptable</option>
+                                        <option value="">SAV</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <label for="">votre message</label>
+                                    <textarea name="" id="message" cols="30" rows="5"
+                                        class="contact-message"></textarea>
+                                </div>
 
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label for="">Sélectionnez le service</label>
-                                <select name="" id="">
-                                    <option value="">service client</option>
-                                    <option value="">service comptable</option>
-                                    <option value="">SAV</option>
-                                </select>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label for="">votre message</label>
-                                <textarea name="" id="message" cols="30" rows="5"></textarea>
-                                <button>
-                                    envoyer
-                                </button>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="contact-form">
+                                        <button class="btn btn-contact">
+                                            envoyer
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </form>
                 </div>
                 <div class="col-md-6">
@@ -370,10 +413,12 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
+        <footer>
+            <div class="copyright">
+                <p>visite du thé - 2019. <a href="#">mentions légales</a></p>
+            </div>
+        </footer>
 
     </section>
 </body>
