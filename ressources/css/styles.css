@@ -234,11 +234,11 @@ cite img{
 /* packs */
 
 .pack{
-    box-shadow: 0,0,5px, rgba(0,0,0,0.3);
+    box-shadow: 0, 0, 5px, rgba(0,0,0,0.3);
     border-radius: 10px;
 }
 .pack h3{
-    color: #5ee077;
+    color: green;
     font-weight: 400;
 }
 .pack h4{
@@ -249,5 +249,21 @@ cite img{
     padding: 10px 10px 0 10px;
     border-bottom: 1px solid #555151;
 }
-
+.pack-content ul{
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.pack-content ul li i{
+    font-size: 90%;
+    margin-left: 10px;
+}
+.pack-signup{
+    text-align: center;
+}
+.btn{
+    background-color: rgb(6, 95, 14);
+    color: #fff;
+}
 
